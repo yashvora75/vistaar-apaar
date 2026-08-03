@@ -52,7 +52,7 @@ const observer = new IntersectionObserver((entries) => {
 revealEls.forEach(el => observer.observe(el));
 
 // Contact form -> sends enquiry to WhatsApp
-const WHATSAPP_NUMBER = '912200000000'; // TODO: replace with real WhatsApp number (country code + number, no + or spaces)
+const WHATSAPP_NUMBER = '919892404091';
 
 const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
