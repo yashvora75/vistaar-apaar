@@ -68,13 +68,15 @@ if (contactForm) {
 
     const lines = [
       'New Redevelopment Enquiry, Vistaar Apaar Developers',
+      '',
       `Name: ${fname}`,
       `Phone: ${phone}`,
       `Email: ${email}`,
+      `Society Name: ${society}`,
+      `Building Location: ${location}`,
+      '',
+      `Message: ${message}`,
     ];
-    if (society) lines.push(`Society Name: ${society}`);
-    if (location) lines.push(`Building Location: ${location}`);
-    lines.push(`Message: ${message}`);
 
     const text = encodeURIComponent(lines.join('\n'));
     const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
