@@ -742,8 +742,8 @@ body.intro-active { overflow: hidden; }
   pointer-events: none;
 }
 .intro-logo {
-  width: 340px;
-  max-width: 70vw;
+  width: clamp(340px, 32vw, 640px);
+  max-width: 80vw;
   opacity: 0;
   transform: scale(0.75) translateY(10px);
   animation: introLogoIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.15s;
