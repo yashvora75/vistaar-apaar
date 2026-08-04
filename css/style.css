@@ -691,7 +691,7 @@ p { color: var(--text-muted); }
 
 /* ===== Page hero (inner pages) ===== */
 .page-hero {
-  background: var(--cream);
+  background: var(--off-white);
   padding: 170px 0 90px;
   position: relative;
   overflow: hidden;
@@ -700,10 +700,10 @@ p { color: var(--text-muted); }
 .page-hero::before {
   content: '';
   position: absolute;
-  right: -100px; top: -100px;
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(232,151,58,0.14), transparent 70%);
-  border-radius: 50%;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 85% 20%, rgba(232,151,58,0.16), transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(58,36,24,0.05), transparent 40%);
 }
 .page-hero h1 { color: var(--brown-deep); position: relative; }
 .breadcrumb {
